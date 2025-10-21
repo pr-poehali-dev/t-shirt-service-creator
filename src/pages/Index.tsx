@@ -99,15 +99,83 @@ const Index = () => {
 
       <main className="pt-16">
         <section className="min-h-[80vh] flex items-center justify-center px-6 py-20">
-          <div className="text-center max-w-3xl mx-auto">
+          <div className="text-center max-w-6xl mx-auto">
             <h2 className="text-5xl md:text-7xl font-light mb-6 tracking-tight">
               Кастомная печать
               <br />
               <span className="font-semibold">и вышивка</span>
             </h2>
-            <p className="text-lg text-muted-foreground mb-8 max-w-xl mx-auto">
+            <p className="text-lg text-muted-foreground mb-12 max-w-xl mx-auto">
               Превращаем обычную одежду в уникальную с помощью качественной печати и профессиональной вышивки
             </p>
+
+            <div className="grid grid-cols-2 md:grid-cols-5 gap-8 mb-12 max-w-4xl mx-auto">
+              <div className="flex flex-col items-center gap-3 group cursor-pointer">
+                <div className="w-20 h-20 border-2 border-foreground flex items-center justify-center transition-transform group-hover:scale-110">
+                  <svg width="50" height="60" viewBox="0 0 50 60" fill="none" stroke="currentColor" strokeWidth="2">
+                    <path d="M10 10 L40 10 L40 15 L45 20 L45 55 L5 55 L5 20 L10 15 Z" />
+                    <line x1="10" y1="15" x2="40" y2="15" />
+                  </svg>
+                </div>
+                <span className="text-sm font-medium">Футболки</span>
+              </div>
+
+              <div className="flex flex-col items-center gap-3 group cursor-pointer">
+                <div className="w-20 h-20 border-2 border-foreground flex items-center justify-center transition-transform group-hover:scale-110">
+                  <svg width="50" height="60" viewBox="0 0 50 60" fill="none" stroke="currentColor" strokeWidth="2">
+                    <path d="M10 10 L40 10 L40 15 L45 20 L45 55 L5 55 L5 20 L10 15 Z" />
+                    <line x1="10" y1="15" x2="40" y2="15" />
+                    <line x1="20" y1="10" x2="20" y2="30" />
+                    <line x1="30" y1="10" x2="30" y2="30" />
+                  </svg>
+                </div>
+                <span className="text-sm font-medium">Рубашки поло</span>
+              </div>
+
+              <div className="flex flex-col items-center gap-3 group cursor-pointer">
+                <div className="w-20 h-20 border-2 border-foreground flex items-center justify-center transition-transform group-hover:scale-110">
+                  <svg width="50" height="60" viewBox="0 0 50 60" fill="none" stroke="currentColor" strokeWidth="2">
+                    <path d="M10 5 L15 5 L15 10 L10 10 L10 15 L45 15 L45 55 L5 55 L5 15 L10 15 Z" />
+                    <path d="M35 5 L40 5 L40 10 L35 10 Z" />
+                    <path d="M17 8 L25 2 L33 8" />
+                  </svg>
+                </div>
+                <span className="text-sm font-medium">Худи</span>
+              </div>
+
+              <div className="flex flex-col items-center gap-3 group cursor-pointer">
+                <div className="w-20 h-20 border-2 border-foreground flex items-center justify-center transition-transform group-hover:scale-110">
+                  <svg width="50" height="60" viewBox="0 0 50 60" fill="none" stroke="currentColor" strokeWidth="2">
+                    <path d="M10 10 L15 10 L15 5 L35 5 L35 10 L40 10 L45 15 L45 55 L5 55 L5 15 Z" />
+                    <circle cx="25" cy="12" r="3" />
+                  </svg>
+                </div>
+                <span className="text-sm font-medium">Свитшоты</span>
+              </div>
+
+              <div className="flex flex-col items-center gap-3 group cursor-pointer">
+                <div className="w-20 h-20 border-2 border-foreground flex items-center justify-center transition-transform group-hover:scale-110">
+                  <svg width="50" height="40" viewBox="0 0 50 40" fill="none" stroke="currentColor" strokeWidth="2">
+                    <ellipse cx="25" cy="25" rx="20" ry="8" />
+                    <path d="M5 25 Q5 15, 25 10 Q45 15, 45 25" />
+                    <line x1="15" y1="10" x2="35" y2="10" />
+                  </svg>
+                </div>
+                <span className="text-sm font-medium">Бейсболки</span>
+              </div>
+            </div>
+
+            <div className="flex flex-wrap justify-center gap-3 mb-12 max-w-3xl mx-auto">
+              {['Оверсайз', 'Классика', 'Детская', 'Мужская', 'Женская', 'Плотная', 'Тёплая', 'С капюшоном', 'На замке'].map((tag) => (
+                <button
+                  key={tag}
+                  className="px-4 py-2 border border-foreground text-sm hover:bg-primary hover:text-primary-foreground transition-all"
+                >
+                  {tag}
+                </button>
+              ))}
+            </div>
+
             <Button
               onClick={() => scrollToSection('catalog')}
               variant="outline"
