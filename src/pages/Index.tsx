@@ -66,7 +66,7 @@ const Index = () => {
       <header className="fixed top-0 left-0 right-0 bg-white/80 backdrop-blur-md z-50 border-b border-border">
         <nav className="container mx-auto px-6 py-4">
           <div className="flex items-center justify-between">
-            <h1 className="text-2xl font-semibold tracking-tight">PRINT SHOP</h1>
+            <h1 className="text-2xl font-semibold tracking-tight">ФУТБОЛОЧНАЯ</h1>
             <div className="hidden md:flex items-center gap-8">
               <button
                 onClick={() => scrollToSection('catalog')}
@@ -236,7 +236,7 @@ const Index = () => {
 
       <footer className="bg-black text-white py-8 px-6">
         <div className="container mx-auto max-w-6xl text-center">
-          <p className="text-sm opacity-70">© 2025 Print Shop. Все права защищены.</p>
+          <p className="text-sm opacity-70">© 2025 Футболочная. Все права защищены.</p>
         </div>
       </footer>
     </div>
